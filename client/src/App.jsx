@@ -1,9 +1,9 @@
 import React from 'react'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
-import './App.css'
 import CreateUser from './Components/CreateUser'
 import ListOfUsers from './Components/ListOfUsers'
 import UpdatePassword from './Components/UpdatePassword'
+import './Styles/App.css'
 
 function App() {
   const client = new ApolloClient({
@@ -17,7 +17,7 @@ function App() {
       <ListOfUsers />
       <UpdatePassword />
     </ApolloProvider>
-  );
+  )
 }
 
-export default App;
+export default App
